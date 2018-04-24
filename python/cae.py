@@ -15,6 +15,9 @@ Converted to csv
 import numpy as np
 import csv
 import matplotlib.pyplot as plt
+from keras.layers import Input, Dense, Conv1D, MaxPooling1D, UpSampling1D
+from keras.models import Model
+from keras import backend as K
 
 class ReadFile(object): # Classe para a leitura da Base de Dados no Formato .csv
 
@@ -66,7 +69,16 @@ input_train = input_train.reshape(num_samples,1)
 target_train = np.array(read_database.read_single_row(target_train_data)) # Saída Desejada
 target_train = target_train[0:num_samples]
 target_train = target_train.reshape(num_samples,1)
-input_train_std = target_train
+input_train_std = target_train # Entrada sem a normalização
+
+# Camadas de convolução e pooling para o encode
+x = Conv1D(16, 1, activation='relu', padding='same')(input_train)
+x = MaxPooling1D(1, padding='same')(x)
+x = Conv1D(8, 1, activation='relu', padding='same')(x)
+x = MaxPooling1D(1, padding='same')(x)
+x = Conv1D(8, 1, activation='relu', padding='same')(x)
+encoded = MaxPooling1D(1, padding='same')(x)
+
 
 plt.plot(input_train)
 plt.show()
