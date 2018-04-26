@@ -71,14 +71,27 @@ target_train = target_train[0:num_samples]
 target_train = target_train.reshape(num_samples,1)
 input_train_std = target_train # Entrada sem a normalização
 
-# Camadas de convolução e pooling para o encode
-x = Conv1D(16, 1, activation='relu', padding='same')(input_train)
-x = MaxPooling1D(1, padding='same')(x)
-x = Conv1D(8, 1, activation='relu', padding='same')(x)
-x = MaxPooling1D(1, padding='same')(x)
-x = Conv1D(8, 1, activation='relu', padding='same')(x)
-encoded = MaxPooling1D(1, padding='same')(x)
+input_img = Input(shape=(num_samples,1))  # adapt this if using `channels_first` image data format
 
+x = Conv1D(16, 12, padding='same')(input_img)
+x = MaxPooling1D(4, padding='same')(x)
+x = Conv1D(8, 12, padding='same')(x)
+x = MaxPooling1D(4, padding='same')(x)
+x = Conv1D(8, 12, padding='same')(x)
+encoded = MaxPooling1D(4, padding='same')(x)
+
+# at this point the representation is (4, 4, 8) i.e. 128-dimensional
+
+x = Conv1D(8, 12, padding='same')(encoded)
+x = UpSampling1D(4)(x)
+x = Conv1D(8, 12, padding='same')(x)
+x = UpSampling1D(4)(x)
+x = Conv1D(16, 12)(x)
+x = UpSampling1D(4)(x)
+decoded = Conv1D(1, 12, activation='sigmoid', padding='same')(x)
+
+autoencoder = Model(input_img, decoded)
+autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
 
 plt.plot(input_train)
 plt.show()
