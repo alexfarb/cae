@@ -4,13 +4,7 @@ import os
 import shutil
 import wfdb
 
-# Demo 1 - Read a wfdb record using the 'rdrecord' function into a wfdb.Record object.
-# Plot the signals, and show the data.
-record = wfdb.rdrecord('sample-data/a103l')
-wfdb.plot_wfdb(record=record, title='Record a103l from Physionet Challenge 2015')
-display(record.__dict__)
+# Demo 16 - List the Physiobank Databases
 
-
-# Can also read the same files hosted on Physiobank https://physionet.org/physiobank/database/
-# in the challenge/2015/training/ database subdirectory. Full url = https://physionet.org/physiobank/database/challenge/2015/training/
-record2 = wfdb.rdrecord('a103l', pb_dir = 'challenge/2015/training/')
+dbs = wfdb.get_dbs()
+display(dbs)
