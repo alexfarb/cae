@@ -1,29 +1,17 @@
-<<<<<<< HEAD
-import warnings
-warnings.filterwarnings("ignore")
-from keras.layers import Input, Dense
-from keras.models import Model
-
-# this is the size of our encoded representations
-encoding_dim = 32  # 32 floats -> compression of factor 24.5, assuming the input is 784 floats
-
-# this is our input placeholder
-input_img = Input(shape=(784,))
-print(input_img)
-# "encoded" is the encoded representation of the input
-encoded = Dense(encoding_dim, activation='relu')(input_img)
-print(encoded)
-# "decoded" is the lossy reconstruction of the input
-decoded = Dense(784, activation='sigmoid')(encoded)
-print(decoded)
-
-# this model maps an input to its reconstruction
-autoencoder = Model(input_img, decoded)
-print(autoencoder)
-=======
+from keras.datasets import mnist
+import numpy as np
 from keras.layers import Input, Dense, Conv2D, MaxPooling2D, UpSampling2D
 from keras.models import Model
 from keras import backend as K
+from keras.callbacks import TensorBoard
+
+(x_train, _), (x_test, _) = mnist.load_data()
+
+x_train = x_train.astype('float32') / 255.
+print(x_train)
+x_test = x_test.astype('float32') / 255.
+x_train = np.reshape(x_train, (len(x_train), 28, 28, 1))  # adapt this if using `channels_first` image data format
+x_test = np.reshape(x_test, (len(x_test), 28, 28, 1))  # adapt this if using `channels_first` image data format
 
 input_img = Input(shape=(28, 28, 1))  # adapt this if using `channels_first` image data format
 
@@ -46,4 +34,10 @@ decoded = Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
 
 autoencoder = Model(input_img, decoded)
 autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
->>>>>>> 5a26c80f7922bc4f6e5d04b310fc87b50b75bb2c
+
+autoencoder.fit(x_train, x_train,
+                epochs=50,
+                batch_size=128,
+                shuffle=True,
+                validation_data=(x_test, x_test),
+                callbacks=[TensorBoard(log_dir='/tmp/autoencoder')])
