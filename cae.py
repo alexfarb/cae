@@ -15,11 +15,12 @@ import warnings
 warnings.filterwarnings("ignore")
 import numpy as np
 import matplotlib.pyplot as plt
-import plotly as py
+# import plotly as py
 from keras.layers import Input, Conv1D, MaxPooling1D, UpSampling1D
 from keras.models import Model, Sequential
 from keras import backend as K
 #from keras.callbacks import TensorBoard
+from sklearn import preprocessing
 
 dataset = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados
 data_length = len(dataset.T) # Tamanho do sinal em número de amostras
@@ -27,16 +28,22 @@ data_train_num = 9 # Tamanho do conjunto de treinamento
 data_test_num = 18
 data_dimension = 1 # Dimensionalidade dos Dados
 kernel_size =  20
-epochs_num = 100000
-input_train = dataset[0:data_train_num,0:data_length] # Conjunto de Treino (Entrada)
-output_train = input_train # Conjunto de Treino (Saída)
-input_test = dataset[data_train_num+1:data_test_num,0:data_length] # Conjunto de Teste (Entrada)
-output_test = input_test # Conjunto de Teste (Saída)
+epochs_num = 2
+input_train_original = dataset[0:data_train_num,0:data_length] # Conjunto de Treino (Entrada)
+output_train_original = input_train_original # Conjunto de Treino (Saída)
+input_test_original = dataset[data_train_num+1:data_test_num,0:data_length] # Conjunto de Teste (Entrada)
+output_test_original = input_test_original # Conjunto de Teste (Saída)
+# Normalização da entrada
+min_max_scaler = preprocessing.MinMaxScaler()
+input_train_minmax = min_max_scaler.fit_transform(input_train_original)
+
+'''
 x_train = np.expand_dims(input_train, axis=2) # Redimensionamento da entrada (treino) para o CAE
 y_train = np.expand_dims(output_train, axis=2) # Redimensionamento da saída (treino) para o CAE
 x_test = np.expand_dims(input_test, axis=2) # Redimensionamento da entrada (teste) para o CAE
 y_test = np.expand_dims(output_test, axis=2)# Redimensionamento da saída (teste) para o CAE
-
+'''
+'''
 # Camadas de Convolução e Pooling para o Encoder
 input_signal = Input(shape=(data_length,data_dimension))
 x = Conv1D(data_dimension, kernel_size, padding='same')(input_signal)
@@ -85,3 +92,5 @@ plt.plot(train_error[0,:])
 plt.title("Erro entre o Sinal Original e o Reconstruído")
 plt.xlim(0,data_length)
 plt.show()
+
+'''
