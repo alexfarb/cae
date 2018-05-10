@@ -2,7 +2,146 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d776ccb9-4cf7-4cca-8157-c9555cba2bb8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/organizedataabnormal.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/figure_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/03700181.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/03700181.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/100.atr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/100.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/100.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/100.qrs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/1003.atr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/1003.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/100_3chan.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/100_3chan.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/100skew.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/101.atr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/101.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/101.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/12726.anI" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/12726.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/12726.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/12726.wabp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/12726.wqrs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/234.atr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/234.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/234.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/3000003_0003.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/3000003_0003.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/310derive.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/310derive.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/310derive_2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/310derive_2.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/310derive_3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/310derive_3.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive_2.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive_2.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive_3.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive_3.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive_4.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/311derive_4.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/a103l.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/a103l.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/drive02.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/drive02.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/fixed1/v102s.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/fixed1/v102s.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/fixed1/v102s_1.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/fixed1/v102s_2.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/fixed1/v102s_3.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3248903_layout.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3248903n.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0001.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0001.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0002.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0002.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0003.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0003.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0004.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0004.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0005.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0005.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0006.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0006.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0007.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0007.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0008.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0008.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0009.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0009.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0010.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0010.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0011.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0011.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0012.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0012.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0013.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0013.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0014.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0014.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0015.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0015.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0016.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_0016.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656_layout.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/3975656n.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/s00001-2896-10-09-01-56.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/s00001-2896-10-09-01-56n.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/s00001-2896-10-10-00-31.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s00001/s00001-2896-10-10-00-31n.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0001.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0001.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0002.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0002.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0003.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0003.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0004.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0004.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0005.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0005.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0006.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0006.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0007.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0007.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0008.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0008.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0009.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0009.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0010.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0010.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0011.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0011.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0012.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0012.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0013.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0013.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0014.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0014.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0015.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0015.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0016.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0016.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0017.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0017.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0018.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_0018.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460_layout.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/3234460n.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/s25047-2704-05-04-10-44.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/multi-segment/s25047/s25047-2704-05-04-10-44n.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/p10143.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/p10143.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/s0010_re.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/s0010_re.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/s0010_re.xyz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/test01_00s.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/test01_00s.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/test01_00s_frame.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/test01_00s_skew.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/test01_00s_skewframe.hea" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/v102s.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample-data/v102s.hea" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cae.py" afterPath="$PROJECT_DIR$/cae.py" />
     </list>
@@ -14,7 +153,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/cae$cae__1_.coverage" NAME="cae (1) Coverage Results" MODIFIED="1525977108300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cae$cae__1_.coverage" NAME="cae (1) Coverage Results" MODIFIED="1525991648001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cae$cae.coverage" NAME="cae Coverage Results" MODIFIED="1525099247752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -23,10 +162,12 @@
       <file leaf-file-name="cae.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cae.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="172" column="60" lean-forward="true" selection-start-line="172" selection-start-column="60" selection-end-line="172" selection-end-column="60" />
+            <state relative-caret-position="-786">
+              <caret line="158" column="62" lean-forward="true" selection-start-line="158" selection-start-column="62" selection-end-line="158" selection-end-column="62" />
               <folding>
                 <element signature="e#24#218#1" expanded="false" />
+                <element signature="e#544#1433#0" expanded="false" />
+                <element signature="e#4789#5543#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -329,24 +470,30 @@
       <option name="project" value="LOCAL" />
       <updated>1525141185041</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Redes pra Treinamento das bases de dados normal e anormal finalizadas">
+      <created>1525978432901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1525978432901</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -367,7 +514,8 @@
     <MESSAGE value="Modelo CAE finalizado." />
     <MESSAGE value="Plots adicionados." />
     <MESSAGE value="Inicio dos testes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicio dos testes." />
+    <MESSAGE value="Redes pra Treinamento das bases de dados normal e anormal finalizadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redes pra Treinamento das bases de dados normal e anormal finalizadas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -380,6 +528,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#218#1" expanded="false" />
+            <element signature="e#544#1433#0" expanded="false" />
+            <element signature="e#4789#5543#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -390,6 +540,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#218#1" expanded="false" />
+            <element signature="e#544#1433#0" expanded="false" />
+            <element signature="e#4789#5543#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -400,6 +552,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#218#1" expanded="false" />
+            <element signature="e#544#1433#0" expanded="false" />
+            <element signature="e#4789#5543#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -410,6 +564,20 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#218#1" expanded="false" />
+            <element signature="e#544#1433#0" expanded="false" />
+            <element signature="e#4789#5543#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#218#1" expanded="false" />
+            <element signature="e#544#1433#0" expanded="false" />
+            <element signature="e#4789#5543#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -431,10 +599,12 @@
     <entry file="file://$PROJECT_DIR$/python/autoenctest.py" />
     <entry file="file://$PROJECT_DIR$/cae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="172" column="60" lean-forward="true" selection-start-line="172" selection-start-column="60" selection-end-line="172" selection-end-column="60" />
+        <state relative-caret-position="-786">
+          <caret line="158" column="62" lean-forward="true" selection-start-line="158" selection-start-column="62" selection-end-line="158" selection-end-column="62" />
           <folding>
             <element signature="e#24#218#1" expanded="false" />
+            <element signature="e#544#1433#0" expanded="false" />
+            <element signature="e#4789#5543#0" expanded="false" />
           </folding>
         </state>
       </provider>

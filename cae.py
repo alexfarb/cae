@@ -15,11 +15,10 @@ import warnings
 warnings.filterwarnings("ignore")
 import numpy as np
 import matplotlib.pyplot as plt
-# import plotly as py
 from keras.layers import Input, Conv1D, MaxPooling1D, UpSampling1D
 from keras.models import Model, Sequential
-from keras import backend as K
-#from keras.callbacks import TensorBoard
+# from keras import backend as K
+# from keras.callbacks import TensorBoard
 
 
 class PreProcessingData(object):
@@ -82,17 +81,23 @@ class Autoencoder(object):
         
         # Treinamento do Modelo
         history_callback = autoencoder.fit(x_train,y_train,
-                         epochs=epochs_num)
-        
-        loss_history = history_callback.history["loss"]
+                         epochs=epochs_num,
+                         validation_data = (x_test, y_test))
+        # Salva o histórico do erro para treino e teste
+        loss_train = history_callback.history["loss"]
+        loss_test = history_callback.history["val_loss"]
+
+        # Salva o modelo treinado em arquivo .h5
+        autoencoder.save('C:\\repos\\cae\saved_models\\cae.hs')
         
         # Saída do Treinamento
         decoded_train = autoencoder.predict(x_train)
+        decoded_test = autoencoder.predict(x_test)
         # Saída do Treinamento redimensionada
         decoded_train_reshaped = (decoded_train.reshape(self.data_train_num, self.data_length))
+        decoded_test_reshaped = (decoded_test.reshape(self.data_test_num-self.data_train_num, self.data_length))
         # Erro de Treinamento
-        train_error = self.input_train - decoded_train_reshaped
-        return decoded_train_reshaped, train_error, loss_history
+        return decoded_train_reshaped, decoded_test_reshaped, loss_train, loss_test
 
 # Classe para os Plots
 class Plots(object):
@@ -117,16 +122,16 @@ class Plots(object):
         plt.xlim(0,data_length)
         plt.show()
 
-network_num = 2
+option = 2
 
-if network_num == 1:
+if option == 1:
     # Pré-processamento e parâmetros para a Base de Dados Saudável (Rede A)
     dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados
     data_length_a = len(dataset_a.T) # Tamanho do sinal em número de amostras
     data_train_num_a = 14 # Tamanho do conjunto de treinamento
     data_test_num_a = 18 # Última amostra do conjunto de teste
     kernel_size_a =  20 # Tamanho do Kernel (Janela) de Convolução
-    epochs_num_a = 2 # Quantidade de Épocas para o Treinamento da Rede
+    epochs_num_a = 10000 # Quantidade de Épocas para o Treinamento da Rede
     data_dimension_a = 1 # Dimensão dos Dados
     optimizer_a = 'adamax'
     loss_a = 'mean_squared_error'
@@ -144,13 +149,21 @@ if network_num == 1:
 
     # Autoencoder para Rede A
     auto_encoder_a = Autoencoder(x_train_a, x_test_a, y_train_a, y_test_a, data_length_a, data_train_num_a, data_test_num_a, data_dimension_a)
-    decoded_train_a, train_error_a, loss_a = auto_encoder_a.convolutional_autoencoder_1d(kernel_size_a, epochs_num_a, optimizer_a, loss_a)
+    decoded_train_a, decoded_test_a, loss_train_a, loss_test_a = auto_encoder_a.convolutional_autoencoder_1d(kernel_size_a, epochs_num_a, optimizer_a, loss_a)
+    decoded_train_a_original = decoded_train_a*(max_a-min_a)+min_a
+    decoded_test_a_original = decoded_test_a*(max_a-min_a)+min_a
+    train_error_a = input_train_a - decoded_train_a_original
+    test_error_a = input_test_a - decoded_test_a_original
 
-    # # Plots para a Rede A
-    # plot = Plots(x_train_a, decoded_train_a)
-    # plot.plot_reconstruct(100, train_error_a, 0, data_length_a)
+    # Salva os resultados em um arquivo .csv
+    np.savetxt('C:\\repos\\cae\\results\\decoded_train_a.csv', decoded_train_a_original, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\decoded_test_a.csv', decoded_test_a_original, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\train_error_a.csv', train_error_a, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\test_error_a.csv', test_error_a, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\loss_train_a.csv', loss_train_a, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\loss_test_a.csv', loss_test_a, delimiter=',', fmt='%s')
 
-else:
+elif option == 2:
     # Pré-processamento e parâmetros para a Base de Dados com anormalidade (Rede B)
     dataset_b = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\abnormal_samples_std.csv",delimiter=",") # Carrega a Base de Dados
     data_length_b = len(dataset_b.T) # Tamanho do sinal em número de amostras
@@ -175,8 +188,27 @@ else:
 
     # Autoencoder para Rede B
     auto_encoder_b = Autoencoder(x_train_b, x_test_b, y_train_b, y_test_b, data_length_b, data_train_num_b, data_test_num_b, data_dimension_b)
-    decoded_train_b, train_error_b, loss_b = auto_encoder_b.convolutional_autoencoder_1d(kernel_size_b, epochs_num_b, optimizer_b, loss_b)
+    decoded_train_b, decoded_test_b, loss_train_b, loss_test_b = auto_encoder_b.convolutional_autoencoder_1d(kernel_size_b, epochs_num_b, optimizer_b, loss_b)
+    decoded_train_b_original = decoded_train_b*(max_b-min_b)+min_b
+    decoded_test_b_original = decoded_test_b*(max_b-min_b)+min_b
+    train_error_b = input_train_b - decoded_train_b_original
+    test_error_b = input_test_b - decoded_test_b_original
 
-    # # Plots para a Rede B
-    # plot = Plots(x_train_b, decoded_train_b)
-    # plot.plot_reconstruct(107, train_error_b, 0, data_length_b)
+    # Salva os resultados em um arquivo .csv
+    np.savetxt('C:\\repos\\cae\\results\\decoded_train_b.csv', decoded_train_b_original, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\decoded_test_b.csv', decoded_test_b_original, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\train_error_b.csv', train_error_b, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\test_error_b.csv', test_error_b, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\loss_train_b.csv', loss_train_b, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\loss_test_b.csv', loss_test_b, delimiter=',', fmt='%s')
+
+# elif option == 3:
+#     # Plots para a Rede A
+#     plot = Plots(input_train_a, decoded_train_a_original)
+#     plot.plot_reconstruct(100, train_error_a, 0, data_length_a)
+#     # Plots para a Rede B
+#     plot = Plots(input_train_b, decoded_train_b_original)
+#     plot.plot_reconstruct(107, train_error_b, 0, data_length_b)
+
+else:
+    pass
