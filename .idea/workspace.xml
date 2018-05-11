@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d776ccb9-4cf7-4cca-8157-c9555cba2bb8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plots.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/ecg_guides/ecgarrhythmias.pdf" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cae.py" afterPath="$PROJECT_DIR$/cae.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/decoded_test_a.csv" afterPath="$PROJECT_DIR$/results/decoded_test_a.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/decoded_test_b.csv" afterPath="$PROJECT_DIR$/results/decoded_test_b.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/decoded_train_a.csv" afterPath="$PROJECT_DIR$/results/decoded_train_a.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/decoded_train_b.csv" afterPath="$PROJECT_DIR$/results/decoded_train_b.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/loss_test_a.csv" afterPath="$PROJECT_DIR$/results/loss_test_a.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/loss_test_b.csv" afterPath="$PROJECT_DIR$/results/loss_test_b.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/loss_train_a.csv" afterPath="$PROJECT_DIR$/results/loss_train_a.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/loss_train_b.csv" afterPath="$PROJECT_DIR$/results/loss_train_b.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/test_error_a.csv" afterPath="$PROJECT_DIR$/results/test_error_a.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/test_error_b.csv" afterPath="$PROJECT_DIR$/results/test_error_b.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/train_error_a.csv" afterPath="$PROJECT_DIR$/results/train_error_a.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/train_error_b.csv" afterPath="$PROJECT_DIR$/results/train_error_b.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saved_models/cae_a.hs" afterPath="$PROJECT_DIR$/saved_models/cae_a.hs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saved_models/cae_b.hs" afterPath="$PROJECT_DIR$/saved_models/cae_b.hs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -381,12 +364,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525978432901</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Inicio do código para os plots.">
+      <created>1526050483533</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526050483533</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -420,7 +409,8 @@
     <MESSAGE value="Plots adicionados." />
     <MESSAGE value="Inicio dos testes." />
     <MESSAGE value="Redes pra Treinamento das bases de dados normal e anormal finalizadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redes pra Treinamento das bases de dados normal e anormal finalizadas" />
+    <MESSAGE value="Inicio do código para os plots." />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicio do código para os plots." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
