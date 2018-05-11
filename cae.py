@@ -99,29 +99,6 @@ class Autoencoder(object):
         # Erro de Treinamento
         return decoded_train_reshaped, decoded_test_reshaped, loss_train, loss_test
 
-# Classe para os Plots
-class Plots(object):
-    def __init__(self, input_data, decoded_data):
-        self.input_data = input_data
-        self.decoded_data = decoded_data
-        
-    def plot_reconstruct(self, sample_name, train_error, data_row, data_length):
-        title = "Paciente %s" %(sample_name)
-        plt.suptitle(title)
-        plt.subplot(311)
-        plt.plot(self.input_data[data_row,:])
-        plt.title("Sinal Original")
-        plt.xlim(0,data_length)
-        plt.subplot(312)
-        plt.plot(self.decoded_data[data_row,:])
-        plt.title("Sinal Reconstruído")
-        plt.xlim(0,data_length)
-        plt.subplot(313)
-        plt.plot(train_error[data_row,:])
-        plt.title("Erro entre o Sinal Original e o Reconstruído")
-        plt.xlim(0,data_length)
-        plt.show()
-
 option = 2
 
 if option == 1:
@@ -156,6 +133,8 @@ if option == 1:
     test_error_a = input_test_a - decoded_test_a_original
 
     # Salva os resultados em um arquivo .csv
+    np.savetxt('C:\\repos\\cae\\results\\input_train_a.csv', input_train_a, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\input_test_a.csv', input_test_a, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\decoded_train_a.csv', decoded_train_a_original, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\decoded_test_a.csv', decoded_test_a_original, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\train_error_a.csv', train_error_a, delimiter=',', fmt='%s')
@@ -195,20 +174,14 @@ elif option == 2:
     test_error_b = input_test_b - decoded_test_b_original
 
     # Salva os resultados em um arquivo .csv
+    np.savetxt('C:\\repos\\cae\\results\\input_train_b.csv', input_train_b, delimiter=',', fmt='%s')
+    np.savetxt('C:\\repos\\cae\\results\\input_test_b.csv', input_test_b, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\decoded_train_b.csv', decoded_train_b_original, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\decoded_test_b.csv', decoded_test_b_original, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\train_error_b.csv', train_error_b, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\test_error_b.csv', test_error_b, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\loss_train_b.csv', loss_train_b, delimiter=',', fmt='%s')
     np.savetxt('C:\\repos\\cae\\results\\loss_test_b.csv', loss_test_b, delimiter=',', fmt='%s')
-
-# elif option == 3:
-#     # Plots para a Rede A
-#     plot = Plots(input_train_a, decoded_train_a_original)
-#     plot.plot_reconstruct(100, train_error_a, 0, data_length_a)
-#     # Plots para a Rede B
-#     plot = Plots(input_train_b, decoded_train_b_original)
-#     plot.plot_reconstruct(107, train_error_b, 0, data_length_b)
 
 else:
     pass
