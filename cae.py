@@ -88,7 +88,7 @@ class Autoencoder(object):
         loss_test = history_callback.history["val_loss"]
 
         # Salva o modelo treinado em arquivo .h5
-        autoencoder.save('C:\\repos\\cae\saved_models\\cae.hs')
+        autoencoder.save('C:\\repos\\cae\saved_models\\cae.h5')
         
         # Saída do Treinamento
         decoded_train = autoencoder.predict(x_train)
