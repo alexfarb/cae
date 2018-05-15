@@ -99,7 +99,7 @@ class Autoencoder(object):
         # Erro de Treinamento
         return decoded_train_reshaped, decoded_test_reshaped, loss_train, loss_test
 
-option = 2
+option = 1
 
 if option == 1:
     # Pré-processamento e parâmetros para a Base de Dados Saudável (Rede A)
@@ -108,7 +108,7 @@ if option == 1:
     data_train_num_a = 14 # Tamanho do conjunto de treinamento
     data_test_num_a = 18 # Última amostra do conjunto de teste
     kernel_size_a =  20 # Tamanho do Kernel (Janela) de Convolução
-    epochs_num_a = 10000 # Quantidade de Épocas para o Treinamento da Rede
+    epochs_num_a = 10 # Quantidade de Épocas para o Treinamento da Rede
     data_dimension_a = 1 # Dimensão dos Dados
     optimizer_a = 'adamax'
     loss_a = 'mean_squared_error'
@@ -117,7 +117,9 @@ if option == 1:
     input_train_a, output_train_a, input_test_a, output_test_a = pre_processing_a.split_train_test(data_train_num_a, data_test_num_a, data_length_a)
     # Minimos e máximos do Conjunto de treino
     max_a = input_train_a.max()
+    print(max_a)
     min_a = input_train_a.min()
+    print(min_a)
     # Normalização das entradas e saídas
     x_train_a = pre_processing_a.normalize_data(input_train_a,min_a,max_a)
     y_train_a = x_train_a
