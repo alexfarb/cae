@@ -1,0 +1,5 @@
+Paciente = ['X220m', 'X223m', 'X230m', 'X234m', 'X217m','X219m','X221m','X222m', 'X228m', 'X231m', 'X232m', 'X233m']
+Classe Real = [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1] # 0 = Saudável, 1 = Anormal
+Classe Predita = [0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0] # 0 = Saudável, 1 = Anormal
+Acertos = [0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1] # 0 = Acerto, 1 = Erro
+Numero Total de Acertos = 5/12

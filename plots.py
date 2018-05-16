@@ -73,7 +73,8 @@ if option == 1:
     # Plots para a Rede A
     plot_a = Plots(loss_train_a, loss_test_a)
 
-    sample_name_a = ['X100m', 'X101m', 'X103m', 'X105m', 'X106m', 'X111m', 'X117m', 'X118m', 'X121m', 'X122m', 'X123m', 'X124m', 'X205m', 'X215m', 'X220m', 'X223m', 'X230m', 'X234m']
+    sample_name_a = ['X100m', 'X101m', 'X103m', 'X105m', 'X106m', 'X111m', 'X117m', 'X118m', 'X121m', 
+                     'X122m', 'X123m', 'X124m', 'X205m', 'X215m', 'X220m', 'X223m', 'X230m', 'X234m']
 
     for i in range(0,len(input_train_a[:,0])):
         plot_a.plot_reconstruct_train(sample_name_a[i], input_train_a, decoded_train_a, train_error_a, i, data_length)

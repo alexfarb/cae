@@ -36,20 +36,20 @@ class Autoencoder(object):
         data_decoded = decoded_reshaped*(max - min) + min
         return data_decoded
     
-    def plot_reconstruct(self, sample_name, data_reshaped, data_decode_a, data_decode_b, msq_a, msq_b, predict_label, correct_label):
-        title = "Paciente %s, Classificado = %s, Categoria Real = %s %%" %(sample_name, predict_label, correct_label)
+    def plot_reconstruct(self, sample_name, data_reshaped, data_decode_a, data_decode_b, msq_a, msq_b, predict_label, data_label):
+        title = "Paciente %s, Classe (Predição) = %s, Classe (Real) = %s " %(sample_name, predict_label, int(data_label))
         plt.suptitle(title)
         plt.subplot(311)
-        plt.plot(data_reshaped)
+        plt.plot(data_reshaped[0,:])
         plt.title("Sinal Original")
         plt.xlim(0, 3600)
         plt.subplot(312)
-        plt.plot(data_decode_a)
-        plt.title("Sinal Reconstruído pela Rede A, EQM = %s" (msq_a))
+        plt.plot(data_decode_a[0,:])
+        plt.title("Sinal Reconstruído pela Rede A, EQM = %s" %(np.round(msq_a,5)))
         plt.xlim(0, 3600)
         plt.subplot(313)
-        plt.plot(data_decode_b)
-        plt.title("Sinal Reconstruído pela Rede B, EQM = %s" (msq_b))
+        plt.plot(data_decode_b[0,:])
+        plt.title("Sinal Reconstruído pela Rede B, EQM = %s" %(np.round(msq_b,5)))
         plt.xlim(0, 3600)
         plt.show()
     
@@ -66,6 +66,7 @@ data = np.concatenate((data_a,data_b),axis=0)
 data_sample = np.delete(data, -1, axis=1)
 data_label = data[:,-1]
 data_label = np.expand_dims(data_label, axis=2)
+data_label_list = data_label.tolist()
 max = 1439
 min = 572
 # Predição usando o autoencoder
@@ -84,6 +85,7 @@ sample_name_b= ['X107m','X108m','X109m','X112m','X113m','X114m',
 sample_name = np.concatenate((sample_name_a,sample_name_b),axis=0)
 
 data_array = [14,15,16,17,38,39,40,41,42,43,44,45]
+# data_array = [14]
 
 cae = Autoencoder()
 i = 0  
@@ -106,14 +108,11 @@ for data_index in data_array:
     elif data_label[data_index,:] != predict_label[i]:
         correct_label.append(1)
         
-    cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a, data_decode_b, msq_a, msq_b, predict_label[i], correct_label[i])
+    cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a, 
+                         data_decode_b, msq_a, msq_b, predict_label[i], 
+                         data_label[data_index])
     i = i+1
-    
-#print(error_model_a)
-#plt.plot(a)
-#plt.plot(a_recon)
-#plt.show()
 
-#predict_model_b = model_b.predict(dataset_a_reshaped[0])
-#error_model_b = losses.mean_squared_error(dataset_a[0], predict_model_b)
-#print(error_model_b)
+print(data_array)
+print(predict_label)
+print(correct_label)
