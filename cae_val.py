@@ -67,8 +67,8 @@ data_sample = np.delete(data, -1, axis=1)
 data_label = data[:,-1]
 data_label = np.expand_dims(data_label, axis=2)
 data_label_list = data_label.tolist()
-max = 1439
-min = 572
+max = 1526
+min = 403
 # Predição usando o autoencoder
 predict_label = [] # Vetor para alocar as categorias preditas
 correct_label = [] # Vetor para alocar as categorias preditas corretamente (0 = Certo, 1 = Errado)
@@ -108,9 +108,9 @@ for data_index in data_array:
     elif data_label[data_index,:] != predict_label[i]:
         correct_label.append(1)
         
-    cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a, 
-                         data_decode_b, msq_a, msq_b, predict_label[i], 
-                         data_label[data_index])
+#    cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a, 
+#                         data_decode_b, msq_a, msq_b, predict_label[i], 
+#                         data_label[data_index])
     i = i+1
 
 print(data_array)
