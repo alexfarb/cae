@@ -53,66 +53,65 @@ class Autoencoder(object):
         plt.xlim(0, 3600)
         plt.show()
     
+def main_cae_val():
+    dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados A
+    dataset_b = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\abnormal_samples_std.csv",delimiter=",") # Carrega a Base de Dados B
+    dataset_a_labels = np.zeros((len(dataset_a[:,0]),1)) # Categorias da Base de Dados A (0)
+    dataset_b_labels = np.ones((len(dataset_b[:,0]),1)) # Categorias da base de Dados B (1)
+    # Adiciona as Categorias as Matrizes
+    data_a = np.concatenate((dataset_a,dataset_a_labels),axis=1)
+    data_b = np.concatenate((dataset_b,dataset_b_labels),axis=1)
+    # Junta todos os dados em uma matriz
+    data = np.concatenate((data_a,data_b),axis=0)
+    data_sample = np.delete(data, -1, axis=1)
+    data_label = data[:,-1]
+    data_label = np.expand_dims(data_label, axis=2)
+    data_label_list = data_label.tolist()
+    max = 1526
+    min = 403
+    # Predição usando o autoencoder
+    predict_label = [] # Vetor para alocar as categorias preditas
+    correct_label = [] # Vetor para alocar as categorias preditas corretamente (0 = Certo, 1 = Errado)
 
-dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados A
-dataset_b = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\abnormal_samples_std.csv",delimiter=",") # Carrega a Base de Dados B
-dataset_a_labels = np.zeros((len(dataset_a[:,0]),1)) # Categorias da Base de Dados A (0)
-dataset_b_labels = np.ones((len(dataset_b[:,0]),1)) # Categorias da base de Dados B (1)
-# Adiciona as Categorias as Matrizes
-data_a = np.concatenate((dataset_a,dataset_a_labels),axis=1)
-data_b = np.concatenate((dataset_b,dataset_b_labels),axis=1)
-# Junta todos os dados em uma matriz
-data = np.concatenate((data_a,data_b),axis=0)
-data_sample = np.delete(data, -1, axis=1)
-data_label = data[:,-1]
-data_label = np.expand_dims(data_label, axis=2)
-data_label_list = data_label.tolist()
-max = 1526
-min = 403
-# Predição usando o autoencoder
-predict_label = [] # Vetor para alocar as categorias preditas
-correct_label = [] # Vetor para alocar as categorias preditas corretamente (0 = Certo, 1 = Errado)
+    sample_name_a = ['X100m', 'X101m', 'X103m', 'X105m', 'X106m', 'X111m', 'X117m', 
+                     'X118m', 'X121m', 'X122m', 'X123m', 'X124m', 'X205m', 'X215m', 
+                     'X220m', 'X223m', 'X230m', 'X234m']
+    sample_name_b= ['X107m','X108m','X109m','X112m','X113m','X114m',
+                        'X115m','X116m','X119m','X200m','X201m','X202m',
+                        'X203m','X207m','X208m','X209m','X210m','X212m',
+                        'X213m','X214m','X217m','X219m','X221m','X222m',
+                        'X228m', 'X231m', 'X232m', 'X233m']
 
-sample_name_a = ['X100m', 'X101m', 'X103m', 'X105m', 'X106m', 'X111m', 'X117m', 
-                 'X118m', 'X121m', 'X122m', 'X123m', 'X124m', 'X205m', 'X215m', 
-                 'X220m', 'X223m', 'X230m', 'X234m']
-sample_name_b= ['X107m','X108m','X109m','X112m','X113m','X114m',
-                    'X115m','X116m','X119m','X200m','X201m','X202m',
-                    'X203m','X207m','X208m','X209m','X210m','X212m',
-                    'X213m','X214m','X217m','X219m','X221m','X222m',
-                    'X228m', 'X231m', 'X232m', 'X233m']
+    sample_name = np.concatenate((sample_name_a,sample_name_b),axis=0)
 
-sample_name = np.concatenate((sample_name_a,sample_name_b),axis=0)
+    data_array = [14,15,16,17,38,39,40,41,42,43,44,45]
 
-data_array = [14,15,16,17,38,39,40,41,42,43,44,45]
-# data_array = [14]
-
-cae = Autoencoder()
-i = 0  
-for data_index in data_array:
-    data_decode_a = cae.autoencoder(data_sample[data_index,:], min, max, 0)
-    data_dim = np.expand_dims(data_sample[data_index,:], axis=2)
-    data_reshaped = data_dim.T
-    msq_a = mean_squared_error(data_reshaped, data_decode_a)
-    data_decode_b = cae.autoencoder(data_sample[data_index,:], min, max, 1)
-    msq_b = mean_squared_error(data_reshaped, data_decode_b)
-    
-    
-    if msq_a < msq_b:
-        predict_label.append(0)
-    elif msq_a > msq_b:
-        predict_label.append(1)
+    cae = Autoencoder()
+    i = 0  
+    for data_index in data_array:
+        data_decode_a = cae.autoencoder(data_sample[data_index,:], min, max, 0)
+        data_dim = np.expand_dims(data_sample[data_index,:], axis=2)
+        data_reshaped = data_dim.T
+        msq_a = mean_squared_error(data_reshaped, data_decode_a)
+        data_decode_b = cae.autoencoder(data_sample[data_index,:], min, max, 1)
+        msq_b = mean_squared_error(data_reshaped, data_decode_b)
         
-    if data_label[data_index,:] == predict_label[i]:
-        correct_label.append(0)
-    elif data_label[data_index,:] != predict_label[i]:
-        correct_label.append(1)
         
-#    cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a, 
-#                         data_decode_b, msq_a, msq_b, predict_label[i], 
-#                         data_label[data_index])
-    i = i+1
+        if msq_a < msq_b:
+            predict_label.append(0)
+        elif msq_a > msq_b:
+            predict_label.append(1)
+            
+        if data_label[data_index,:] == predict_label[i]:
+            correct_label.append(0)
+        elif data_label[data_index,:] != predict_label[i]:
+            correct_label.append(1)
+            
+        #cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a,
+        #                     data_decode_b, msq_a, msq_b, predict_label[i],
+        #                     data_label[data_index])
+        i = i+1
 
-print(data_array)
-print(predict_label)
-print(correct_label)
+    print(data_array)
+    print(predict_label)
+    print(correct_label)
