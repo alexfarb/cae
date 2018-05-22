@@ -10,4 +10,7 @@ all_vectors = [X100m;X101m;X103m;X105m;X106m;X111m;
     
 healthy_samples_std = all_vectors;
 
-csvwrite('C:\repos\cae\data\conv1d\healthy_samples_std.csv',healthy_samples_std);
+csvwrite('C:\repos\cae\data\conv1d\healthy_samples_std_v2.csv',healthy_samples_std);
+k = healthy_samples_std(1,:);
+
+plot(k(:,1:100:3600))

@@ -11,4 +11,4 @@ all_vectors = [X107m;X108m;X109m;X112m;X113m;X114m;
                     X228m;X231m;X232m;X233m];
 abnormal_samples_std = all_vectors;
 
-csvwrite('C:\repos\cae\data\conv1d\abnormal_samples_std.csv',abnormal_samples_std);
+csvwrite('C:\repos\cae\data\conv1d\abnormal_samples_std_v2.csv',abnormal_samples_std);
