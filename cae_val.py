@@ -107,9 +107,9 @@ def main_cae_val():
         elif data_label[data_index,:] != predict_label[i]:
             correct_label.append(1)
             
-        #cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a,
-        #                     data_decode_b, msq_a, msq_b, predict_label[i],
-        #                     data_label[data_index])
+        cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a,
+                             data_decode_b, msq_a, msq_b, predict_label[i],
+                             data_label[data_index])
         i = i+1
 
     print(data_array)
