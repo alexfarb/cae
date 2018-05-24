@@ -42,16 +42,20 @@ class Autoencoder(object):
         plt.subplot(311)
         plt.plot(data_reshaped[0,:])
         plt.title("Sinal Original")
-        plt.xlim(0, 3600)
+        plt.xlim(0, len(data_reshaped.T))
         plt.subplot(312)
         plt.plot(data_decode_a[0,:])
         plt.title("Sinal Reconstruído pela Rede A, EQM = %s" %(np.round(msq_a,5)))
-        plt.xlim(0, 3600)
+        plt.xlim(0, len(data_reshaped.T))
         plt.subplot(313)
         plt.plot(data_decode_b[0,:])
         plt.title("Sinal Reconstruído pela Rede B, EQM = %s" %(np.round(msq_b,5)))
-        plt.xlim(0, 3600)
-        plt.show()
+        plt.xlim(0, len(data_reshaped.T))
+        fig1 = plt.gcf()
+        fig1_path = 'C:\\repos\\cae\\plots\\%s.png' % (sample_name)
+        plt.draw()
+        fig1.set_size_inches((12, 10), forward=False)
+        fig1.savefig(fig1_path)
     
 def main_cae_val():
     dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados A
@@ -84,7 +88,10 @@ def main_cae_val():
 
     sample_name = np.concatenate((sample_name_a,sample_name_b),axis=0)
 
-    data_array = [14,15,16,17,38,39,40,41,42,43,44,45]
+    # data_array = [14,15,16,17,38,39,40,41,42,43,44,45]
+    # data_array = np.arange(0,13)
+    data_array = [0]
+    # data_array = np.arange(18,37)
 
     cae = Autoencoder()
     i = 0  
@@ -106,10 +113,11 @@ def main_cae_val():
             correct_label.append(0)
         elif data_label[data_index,:] != predict_label[i]:
             correct_label.append(1)
-            
+
         cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a,
-                             data_decode_b, msq_a, msq_b, predict_label[i],
-                             data_label[data_index])
+                              data_decode_b, msq_a, msq_b, predict_label[i],
+                              data_label[data_index])
+
         i = i+1
 
     print(data_array)
