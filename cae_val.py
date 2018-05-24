@@ -37,6 +37,8 @@ class Autoencoder(object):
         return data_decoded
     
     def plot_reconstruct(self, sample_name, data_reshaped, data_decode_a, data_decode_b, msq_a, msq_b, predict_label, data_label):
+        plt.cla()
+        plt.clf()
         title = "Paciente %s, Classe (Predição) = %s, Classe (Real) = %s " %(sample_name, predict_label, int(data_label))
         plt.suptitle(title)
         plt.subplot(311)
@@ -56,6 +58,8 @@ class Autoencoder(object):
         plt.draw()
         fig1.set_size_inches((12, 10), forward=False)
         fig1.savefig(fig1_path)
+        plt.cla()
+        plt.clf()
     
 def main_cae_val():
     dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados A
@@ -89,8 +93,10 @@ def main_cae_val():
     sample_name = np.concatenate((sample_name_a,sample_name_b),axis=0)
 
     # data_array = [14,15,16,17,38,39,40,41,42,43,44,45]
-    # data_array = np.arange(0,13)
-    data_array = [0]
+    # data_array = np.arange(0,45)
+    # data_array = [14,15,16,17]
+    # data_array = [38, 39, 40, 41, 42, 43, 44, 45]
+    data_array = [45]
     # data_array = np.arange(18,37)
 
     cae = Autoencoder()

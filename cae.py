@@ -98,7 +98,7 @@ class Autoencoder(object):
 
 def main_cae():
     option = [1, 2]
-    epochs_ab = 100 # 100, 500, 1000, 10000
+    epochs_ab = 2000 # 100, 500, 1000, 10000
     max_ab = 1526
     min_ab = 403
 
