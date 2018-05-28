@@ -79,6 +79,7 @@ class Autoencoder(object):
         # Treinamento do Modelo
         history_callback = autoencoder.fit(x_train,y_train,
                          epochs=epochs_num,
+                         verbose = 0,
                          validation_data = (x_test, y_test))
         # Salva o histórico do erro para treino e teste
         loss_train = history_callback.history["loss"]
@@ -98,7 +99,7 @@ class Autoencoder(object):
 
 def main_cae():
     option = [1, 2]
-    epochs_ab = 2000 # 100, 500, 1000, 10000
+    epochs_ab = 12000 # 100, 500, 1000, 10000
     max_ab = 1526
     min_ab = 403
 
