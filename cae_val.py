@@ -5,6 +5,9 @@ from keras.models import load_model
 from keras import backend as K
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
+from dtw import dtw
+from numpy.linalg import norm
+from scipy.spatial.distance import euclidean
 
 class PreProcessingData(object):
     # Metódo Construtor
@@ -47,11 +50,11 @@ class Autoencoder(object):
         plt.xlim(0, len(data_reshaped.T))
         plt.subplot(312)
         plt.plot(data_decode_a[0,:])
-        plt.title("Sinal Reconstruído pela Rede A, EQM = %s" %(np.round(msq_a,5)))
+        plt.title("Sinal Reconstruído pela Rede A, Erro = %s" %(np.round(msq_a,5)))
         plt.xlim(0, len(data_reshaped.T))
         plt.subplot(313)
         plt.plot(data_decode_b[0,:])
-        plt.title("Sinal Reconstruído pela Rede B, EQM = %s" %(np.round(msq_b,5)))
+        plt.title("Sinal Reconstruído pela Rede B, Erro = %s" %(np.round(msq_b,5)))
         plt.xlim(0, len(data_reshaped.T))
         fig1 = plt.gcf()
         fig1_path = 'C:\\repos\\cae\\plots\\%s.png' % (sample_name)
@@ -94,9 +97,9 @@ def main_cae_val():
 
     # data_array = np.arange(0, 13)
     # data_array = np.arange(0, 14)
-    data_array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+    # data_array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
     # data_array = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37]
-    # data_array = [38, 39, 40, 41, 42, 43, 44, 45]
+    data_array = [38, 39, 40, 41, 42, 43, 44, 45]
     # data_array = np.arange(19,37)
     # data_array = [38, 39, 40, 41, 42, 43, 44, 45]
     # data_array = [37]
@@ -108,10 +111,11 @@ def main_cae_val():
         data_decode_a = cae.autoencoder(data_sample[data_index,:], min, max, 0)
         data_dim = np.expand_dims(data_sample[data_index,:], axis=2)
         data_reshaped = data_dim.T
-        msq_a = mean_squared_error(data_reshaped, data_decode_a)
+        # msq_a = mean_squared_error(data_reshaped, data_decode_a)
+        msq_a, cost_a, acc_a, path_a = dtw(data_reshaped, data_decode_a, dist=euclidean)
         data_decode_b = cae.autoencoder(data_sample[data_index,:], min, max, 1)
-        msq_b = mean_squared_error(data_reshaped, data_decode_b)
-        
+        # msq_b = mean_squared_error(data_reshaped, data_decode_b)
+        msq_b, cost_b, acc_b, path_b = dtw(data_reshaped, data_decode_b, dist=euclidean)
         
         if msq_a < msq_b:
             predict_label.append(0)
