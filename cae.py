@@ -79,7 +79,7 @@ class Autoencoder(object):
         # Treinamento do Modelo
         history_callback = autoencoder.fit(x_train,y_train,
                          epochs=epochs_num,
-                         verbose = 0,
+                         verbose = 1,
                          validation_data = (x_test, y_test))
         # Salva o histórico do erro para treino e teste
         loss_train = history_callback.history["loss"]
@@ -99,7 +99,7 @@ class Autoencoder(object):
 
 def main_cae():
     option = [1, 2]
-    epochs_ab = 12000 # 100, 500, 1000, 10000
+    epochs_ab = 7550 # 100, 500, 1000, 10000
     max_ab = 1526
     min_ab = 403
 
@@ -107,10 +107,10 @@ def main_cae():
     for i in range(0,2):
         if option[i] == 1:
             # Pré-processamento e parâmetros para a Base de Dados Saudável (Rede A)
-            dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados
+            dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\normal_samples_std.csv",delimiter=",") # Carrega a Base de Dados
             data_length_a = len(dataset_a.T) # Tamanho do sinal em número de amostras
             data_train_num_a = 14 # Tamanho do conjunto de treinamento
-            data_test_num_a = 18 # Última amostra do conjunto de teste
+            data_test_num_a = 23 # Última amostra do conjunto de teste
             kernel_size_a =  20 # Tamanho do Kernel (Janela) de Convolução
             epochs_num_a = epochs_ab # Quantidade de Épocas para o Treinamento da Rede
             data_dimension_a = 1 # Dimensão dos Dados
@@ -155,8 +155,8 @@ def main_cae():
             # Pré-processamento e parâmetros para a Base de Dados com anormalidade (Rede B)
             dataset_b = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\abnormal_samples_std.csv",delimiter=",") # Carrega a Base de Dados
             data_length_b = len(dataset_b.T) # Tamanho do sinal em número de amostras
-            data_train_num_b = 20 # Tamanho do conjunto de treinamento
-            data_test_num_b = 28 # Última amostra do conjunto de teste
+            data_train_num_b = 14 # Tamanho do conjunto de treinamento
+            data_test_num_b = 23 # Última amostra do conjunto de teste
             kernel_size_b =  20 # Tamanho do Kernel (Janela) de Convolução
             epochs_num_b = epochs_ab # Quantidade de Épocas para o Treinamento da Rede
             data_dimension_b = 1 # Dimensão dos Dados

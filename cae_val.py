@@ -65,7 +65,7 @@ class Autoencoder(object):
         plt.clf()
     
 def main_cae_val():
-    dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\healthy_samples_std.csv",delimiter=",") # Carrega a Base de Dados A
+    dataset_a = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\normal_samples_std.csv",delimiter=",") # Carrega a Base de Dados A
     dataset_b = np.loadtxt("C:\\repos\\cae\\data\\conv1d\\abnormal_samples_std.csv",delimiter=",") # Carrega a Base de Dados B
     dataset_a_labels = np.zeros((len(dataset_a[:,0]),1)) # Categorias da Base de Dados A (0)
     dataset_b_labels = np.ones((len(dataset_b[:,0]),1)) # Categorias da base de Dados B (1)
@@ -84,31 +84,26 @@ def main_cae_val():
     predict_label = [] # Vetor para alocar as categorias preditas
     correct_label = [] # Vetor para alocar as categorias preditas corretamente (0 = Certo, 1 = Errado)
 
-    sample_name_a = ['X100m', 'X101m', 'X103m', 'X105m', 'X106m', 'X111m', 'X117m', 
-                     'X118m', 'X121m', 'X122m', 'X123m', 'X124m', 'X205m', 'X215m', 
-                     'X220m', 'X223m', 'X230m', 'X234m']
-    sample_name_b= ['X107m','X108m','X109m','X112m','X113m','X114m',
-                        'X115m','X116m','X119m','X200m','X201m','X202m',
-                        'X203m','X207m','X208m','X209m','X210m','X212m',
-                        'X213m','X214m','X217m','X219m','X221m','X222m',
-                        'X228m', 'X231m', 'X232m', 'X233m']
+    sample_name_a = ['X100m', 'X101m', 'X103m', 'X105m', 'X106m', 'X112m', 'X113m',
+                     'X114m', 'X115m', 'X116m', 'X117m', 'X121m', 'X122m', 'X123m',
+                     'X201m', 'X202m', 'X205m', 'X209m',
+                     'X213m', 'X215m', 'X219m', 'X220m', 'X234m']
+    sample_name_b= ['X107m','X108m','X109m','X111m','X118m','X119m',
+                        'X124m','X200m','X203m','X207m','X208m','X210m',
+                        'X212m','X214m','X217m','X221m','X222m','X223m',
+                        'X228m','X230m','X231m','X232m','X233m']
 
     sample_name = np.concatenate((sample_name_a,sample_name_b),axis=0)
 
-    # data_array = np.arange(0, 13)
-    # data_array = np.arange(0, 14)
     # data_array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    # data_array = [14, 15, 16, 17, 18, 19, 20 , 21, 22]
+    data_array = [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]
+    # data_array = [37, 38, 39, 40, 41, 42, 43, 44, 45]
     # data_array = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45]
-    # data_array = [14, 15, 16, 17]
-    # data_array = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37]
-    data_array = [38, 39, 40, 41, 42, 43, 44, 45]
-    # data_array = np.arange(19,37)
-    # data_array = [38, 39, 40, 41, 42, 43, 44, 45]
     # data_array = [0,1]
-    # data_array = np.arange(0,13)
 
-    all_data_decoded_a = []
-    all_data_decoded_b = []
+    # all_data_decoded_a = []
+    # all_data_decoded_b = []
 
     cae = Autoencoder()
     i = 0  
@@ -116,31 +111,29 @@ def main_cae_val():
         data_decoded_a = cae.autoencoder(data_sample[data_index,:], min, max, 0)
         data_dim = np.expand_dims(data_sample[data_index,:], axis=2)
         data_reshaped = data_dim.T
-        # msq_a = mean_squared_error(data_reshaped, data_decode_a)
-        # msq_a, cost_a, acc_a, path_a = dtw(data_reshaped, data_decode_a, dist=euclidean)
+        msq_a = mean_squared_error(data_reshaped, data_decoded_a)
         data_decoded_b = cae.autoencoder(data_sample[data_index,:], min, max, 1)
-        # msq_b = mean_squared_error(data_reshaped, data_decode_b)
-        # msq_b, cost_b, acc_b, path_b = dtw(data_reshaped, data_decode_b, dist=euclidean)
+        msq_b = mean_squared_error(data_reshaped, data_decoded_b)
         
-        # if msq_a < msq_b:
-        #     predict_label.append(0)
-        # elif msq_a > msq_b:
-        #     predict_label.append(1)
-        #
-        # if data_label[data_index,:] == predict_label[i]:
-        #     correct_label.append(0)
-        # elif data_label[data_index,:] != predict_label[i]:
-        #     correct_label.append(1)
+        if msq_a < msq_b:
+            predict_label.append(0)
+        elif msq_a > msq_b:
+            predict_label.append(1)
 
-        # cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decode_a,
-        #                        data_decode_b, msq_a, msq_b, predict_label[i],
-        #                       data_label[data_index])
+        if data_label[data_index,:] == predict_label[i]:
+            correct_label.append(0)
+        elif data_label[data_index,:] != predict_label[i]:
+            correct_label.append(1)
+
+        cae.plot_reconstruct(sample_name[data_index], data_reshaped, data_decoded_a,
+                                data_decoded_b, msq_a, msq_b, predict_label[i],
+                               data_label[data_index])
 
 
-        data_decoded_a = np.reshape(data_decoded_a,3600)
-        data_decoded_b = np.reshape(data_decoded_b, 3600)
-        all_data_decoded_a.append(data_decoded_a)
-        all_data_decoded_b.append(data_decoded_b)
+        # data_decoded_a = np.reshape(data_decoded_a,3600)
+        # data_decoded_b = np.reshape(data_decoded_b, 3600)
+        # all_data_decoded_a.append(data_decoded_a)
+        # all_data_decoded_b.append(data_decoded_b)
 
         # np.savetxt('C:\\repos\\cae\\results\\100m_data_reshaped.csv', data_reshaped, delimiter=',', fmt='%s')
         # np.savetxt('C:\\repos\\cae\\results\\100m_data_decoded_a.csv', data_decode_a, delimiter=',', fmt='%s')
@@ -151,9 +144,9 @@ def main_cae_val():
 #    data_decoded_b = data_decoded_b    
 #    print(data_decoded_a)
 #     np.savetxt('C:\\repos\\cae\\results\\all_data_sample_0_13.csv', data_sample, delimiter=',', fmt='%s')
-    np.savetxt('C:\\repos\\cae\\results\\all_data_decoded_a_38_45.csv', all_data_decoded_a, delimiter=',', fmt='%s')
-    np.savetxt('C:\\repos\\cae\\results\\all_data_decoded_b_38_45.csv', all_data_decoded_b, delimiter=',', fmt='%s')
-    # print(data_decoded_b)
-    # print(data_array)
-    # print(predict_label)
-    # print(correct_label)
+#     np.savetxt('C:\\repos\\cae\\results\\all_data_decoded_a_38_45.csv', all_data_decoded_a, delimiter=',', fmt='%s')
+#     np.savetxt('C:\\repos\\cae\\results\\all_data_decoded_b_38_45.csv', all_data_decoded_b, delimiter=',', fmt='%s')
+#     print(data_decoded_b)
+    print(data_array)
+    print(predict_label)
+    print(correct_label)
