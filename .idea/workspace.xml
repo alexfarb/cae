@@ -2,117 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f753b89-52d1-473d-8bf4-94d33be3ade8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/112m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/113m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/114m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/115m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/116m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/201m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/202m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/209m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/213m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/219m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/100m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/101m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/103m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/105m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/106m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/112m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/113m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/114m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/115m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/116m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/117m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/121m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/122m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/123m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/201m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/202m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/205m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/209m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/213m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/215m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/219m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/220m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/all/234m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/100m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/101m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/103m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/105m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/106m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/111m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/117m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/118m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/121m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/122m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/123m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/124m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/205m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/215m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/220m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/223m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/230m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/234m.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/diag/standard/healthy/loadall.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/autoenc_a.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/autoenc_b.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/cae_a_1000.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/cae_a_original.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/cae_b_1000.h5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/cae_b_original.h5" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X100m.png" afterPath="$PROJECT_DIR$/plots/X100m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X101m.png" afterPath="$PROJECT_DIR$/plots/X101m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X103m.png" afterPath="$PROJECT_DIR$/plots/X103m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X105m.png" afterPath="$PROJECT_DIR$/plots/X105m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X106m.png" afterPath="$PROJECT_DIR$/plots/X106m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X107m.png" afterPath="$PROJECT_DIR$/plots/X107m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X108m.png" afterPath="$PROJECT_DIR$/plots/X108m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X109m.png" afterPath="$PROJECT_DIR$/plots/X109m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X111m.png" afterPath="$PROJECT_DIR$/plots/X111m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X112m.png" afterPath="$PROJECT_DIR$/plots/X112m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X113m.png" afterPath="$PROJECT_DIR$/plots/X113m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X114m.png" afterPath="$PROJECT_DIR$/plots/X114m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X115m.png" afterPath="$PROJECT_DIR$/plots/X115m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X116m.png" afterPath="$PROJECT_DIR$/plots/X116m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X117m.png" afterPath="$PROJECT_DIR$/plots/X117m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X118m.png" afterPath="$PROJECT_DIR$/plots/X118m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X119m.png" afterPath="$PROJECT_DIR$/plots/X119m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X121m.png" afterPath="$PROJECT_DIR$/plots/X121m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X122m.png" afterPath="$PROJECT_DIR$/plots/X122m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X123m.png" afterPath="$PROJECT_DIR$/plots/X123m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X124m.png" afterPath="$PROJECT_DIR$/plots/X124m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X200m.png" afterPath="$PROJECT_DIR$/plots/X200m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X201m.png" afterPath="$PROJECT_DIR$/plots/X201m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X202m.png" afterPath="$PROJECT_DIR$/plots/X202m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X203m.png" afterPath="$PROJECT_DIR$/plots/X203m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X205m.png" afterPath="$PROJECT_DIR$/plots/X205m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X207m.png" afterPath="$PROJECT_DIR$/plots/X207m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X208m.png" afterPath="$PROJECT_DIR$/plots/X208m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X209m.png" afterPath="$PROJECT_DIR$/plots/X209m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X210m.png" afterPath="$PROJECT_DIR$/plots/X210m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X212m.png" afterPath="$PROJECT_DIR$/plots/X212m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X213m.png" afterPath="$PROJECT_DIR$/plots/X213m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X214m.png" afterPath="$PROJECT_DIR$/plots/X214m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X215m.png" afterPath="$PROJECT_DIR$/plots/X215m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X217m.png" afterPath="$PROJECT_DIR$/plots/X217m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X219m.png" afterPath="$PROJECT_DIR$/plots/X219m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X220m.png" afterPath="$PROJECT_DIR$/plots/X220m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X221m.png" afterPath="$PROJECT_DIR$/plots/X221m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X222m.png" afterPath="$PROJECT_DIR$/plots/X222m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X223m.png" afterPath="$PROJECT_DIR$/plots/X223m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X228m.png" afterPath="$PROJECT_DIR$/plots/X228m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X230m.png" afterPath="$PROJECT_DIR$/plots/X230m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X231m.png" afterPath="$PROJECT_DIR$/plots/X231m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X232m.png" afterPath="$PROJECT_DIR$/plots/X232m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X233m.png" afterPath="$PROJECT_DIR$/plots/X233m.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/X234m.png" afterPath="$PROJECT_DIR$/plots/X234m.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/conv1d/abnormal_samples_std_v2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/conv1d/healthy_samples_std.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/conv1d/healthy_samples_std_v2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X100m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X101m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X103m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X105m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X106m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X107m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X108m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X109m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X111m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X112m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X113m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X114m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X115m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X116m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X117m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X118m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X119m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X121m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X122m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X123m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X124m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X200m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X201m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X202m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X203m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X205m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X207m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X208m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X209m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X210m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X212m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X213m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X214m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X215m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X217m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X219m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X220m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X221m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X222m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X223m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X228m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X230m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X231m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X232m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X233m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/7550/X234m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/100m_data_decoded_a.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/100m_data_decoded_b.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/100m_data_reshaped.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais (DTW).docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais (DTW).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v2.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v3.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v3.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v4.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v4.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v5.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders Convolucionais v5.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders v1.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/Classificação de ECGs através de Autoencoders v1.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_a.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_a_0_13.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_a_14_17.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_a_18_37.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_a_38_45.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_b.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_b_0_13.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_b_14_17.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_b_18_37.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_decoded_b_38_45.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/all_data_sample.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/data_decoded_b_test.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/results/validation.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/7550/cae_a.h5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/saved_models/7550/cae_b.h5" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classificação de ECGs através de Autoencoders Convolucionais (DTW) v2.docx" afterPath="$PROJECT_DIR$/Classificação de ECGs através de Autoencoders Convolucionais (DTW) v2.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classificação de ECGs através de Autoencoders Convolucionais (DTW) v2.pdf" afterPath="$PROJECT_DIR$/Classificação de ECGs através de Autoencoders Convolucionais (DTW) v2.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classifier.m" afterPath="$PROJECT_DIR$/classifier.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saved_models/cae_a.h5" afterPath="$PROJECT_DIR$/saved_models/cae_a.h5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saved_models/cae_b.h5" afterPath="$PROJECT_DIR$/saved_models/cae_b.h5" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cae.py" afterPath="$PROJECT_DIR$/cae.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cae_val.py" afterPath="$PROJECT_DIR$/cae_val.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/conv1d/abnormal_samples_std.csv" afterPath="$PROJECT_DIR$/data/conv1d/abnormal_samples_std.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/diag/standard/abnormal/loadall.m" afterPath="$PROJECT_DIR$/data/diag/standard/abnormal/loadall.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/conv1d/normal_samples_std.csv" afterPath="$PROJECT_DIR$/data/conv1d/normal_samples_std.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/decoded_test_a.csv" afterPath="$PROJECT_DIR$/results/decoded_test_a.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/decoded_test_b.csv" afterPath="$PROJECT_DIR$/results/decoded_test_b.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/decoded_train_a.csv" afterPath="$PROJECT_DIR$/results/decoded_train_a.csv" />
@@ -129,6 +107,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/test_error_b.csv" afterPath="$PROJECT_DIR$/results/test_error_b.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/train_error_a.csv" afterPath="$PROJECT_DIR$/results/train_error_a.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/train_error_b.csv" afterPath="$PROJECT_DIR$/results/train_error_b.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results_predict_update.txt" afterPath="$PROJECT_DIR$/results_predict_update.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,44 +117,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/cae$main.coverage" NAME="main Coverage Results" MODIFIED="1528163376894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cae$main.coverage" NAME="main Coverage Results" MODIFIED="1529942632525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cae$main_alt.coverage" NAME="main_alt Coverage Results" MODIFIED="1530062348884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+      <file leaf-file-name="main_alt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_alt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="81">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cae_val.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cae_val.py">
+      <file leaf-file-name="cae_val_alt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cae_val_alt.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="99" column="4" lean-forward="true" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
-              <folding>
-                <element signature="e#348#625#0" expanded="false" />
-              </folding>
+              <caret line="102" column="80" lean-forward="false" selection-start-line="102" selection-start-column="80" selection-end-line="102" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cae.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cae.py">
+      <file leaf-file-name="cae_alt.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cae_alt.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="101" column="19" lean-forward="false" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+            <state relative-caret-position="537">
+              <caret line="114" column="54" lean-forward="false" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
               <folding>
+                <element signature="e#24#218#1" expanded="false" />
                 <element signature="e#455#1344#0" expanded="false" />
-                <element signature="e#690#1168#0" expanded="false" />
-                <element signature="e#1570#1889#0" expanded="false" />
+                <element signature="e#1406#4669#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -198,8 +176,11 @@
         <option value="$PROJECT_DIR$/autoenc.py" />
         <option value="$PROJECT_DIR$/autoenc_val.py" />
         <option value="$PROJECT_DIR$/cae.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/cae_val.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/cae_val_alt.py" />
+        <option value="$PROJECT_DIR$/main_alt.py" />
+        <option value="$PROJECT_DIR$/cae_alt.py" />
       </list>
     </option>
   </component>
@@ -231,6 +212,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,23 +225,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cae" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cae" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main_alt">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,6 +261,25 @@
       <module name="cae" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main_alt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="cae" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_alt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -448,12 +434,14 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main_alt" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.main_alt" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -509,11 +497,11 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -546,42 +534,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/autoenc_val.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
-          <caret line="112" column="8" lean-forward="false" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoenc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2538">
-          <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cae_val.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2592">
           <caret line="96" column="4" lean-forward="false" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -589,11 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1566">
           <caret line="58" column="66" lean-forward="false" selection-start-line="58" selection-start-column="66" selection-end-line="58" selection-end-column="66" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,9 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,9 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2646">
           <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,11 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1701">
           <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -647,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,9 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2619">
           <caret line="97" column="32" lean-forward="false" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,11 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2106">
           <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,9 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,11 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
           <caret line="100" column="18" lean-forward="false" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -701,9 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2889">
           <caret line="107" column="37" lean-forward="true" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -711,9 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,11 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
           <caret line="100" column="18" lean-forward="false" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,9 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2646">
           <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,9 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,11 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
           <caret line="100" column="18" lean-forward="false" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,9 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2673">
           <caret line="99" column="31" lean-forward="false" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -775,9 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2538">
           <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,11 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4293">
           <caret line="159" column="36" lean-forward="false" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="36" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,9 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,11 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2646">
           <caret line="98" column="4" lean-forward="false" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,9 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2646">
           <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,9 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -849,11 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
           <caret line="105" column="4" lean-forward="false" selection-start-line="155" selection-start-column="28" selection-end-line="155" selection-end-column="44" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -861,40 +732,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1539">
           <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v2/caev2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2/mainv2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2/cae_valv2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/caev2.py" />
+    <entry file="file://$PROJECT_DIR$/v2/mainv2.py" />
+    <entry file="file://$PROJECT_DIR$/v2/cae_valv2.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -902,9 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2997">
           <caret line="111" column="8" lean-forward="false" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,11 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
           <caret line="131" column="41" lean-forward="true" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -924,9 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,9 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2997">
           <caret line="111" column="8" lean-forward="false" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -944,11 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="100" column="17" lean-forward="false" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,9 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,9 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2997">
           <caret line="111" column="9" lean-forward="false" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
-          <folding>
-            <element signature="e#348#625#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,35 +798,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="100" column="17" lean-forward="false" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v2/caev2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2/mainv2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2/cae_valv2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/caev2.py" />
+    <entry file="file://$PROJECT_DIR$/v2/mainv2.py" />
+    <entry file="file://$PROJECT_DIR$/v2/cae_valv2.py" />
     <entry file="file://$PROJECT_DIR$/autoenc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2538">
@@ -1019,34 +818,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cae.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="101" column="19" lean-forward="false" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
-          <folding>
-            <element signature="e#455#1344#0" expanded="false" />
-            <element signature="e#690#1168#0" expanded="false" />
-            <element signature="e#1570#1889#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cae_val.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="99" column="4" lean-forward="true" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="4" />
+        <state relative-caret-position="4212">
+          <caret line="156" column="24" lean-forward="false" selection-start-line="156" selection-start-column="24" selection-end-line="156" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_alt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#348#625#0" expanded="false" />
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cae_val_alt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="102" column="80" lean-forward="false" selection-start-line="102" selection-start-column="80" selection-end-line="102" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cae_alt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="114" column="54" lean-forward="false" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
+          <folding>
+            <element signature="e#24#218#1" expanded="false" />
+            <element signature="e#455#1344#0" expanded="false" />
+            <element signature="e#1406#4669#0" expanded="false" />
           </folding>
         </state>
       </provider>

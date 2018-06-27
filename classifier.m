@@ -3,24 +3,24 @@ clear;
 close all;
 % Carrega a base de dados e os resultados
 data_original = csvread('C:\repos\cae\results\all_data_sample.csv');
-data_decoded_a_0_13 = csvread('C:\repos\cae\results\all_data_decoded_a_0_13.csv');
-data_decoded_a_14_17 = csvread('C:\repos\cae\results\all_data_decoded_a_14_17.csv');
-data_decoded_a_18_37 = csvread('C:\repos\cae\results\all_data_decoded_a_18_37.csv');
-data_decoded_a_38_45 = csvread('C:\repos\cae\results\all_data_decoded_a_38_45.csv');
-data_decoded_b_0_13 = csvread('C:\repos\cae\results\all_data_decoded_b_0_13.csv');
-data_decoded_b_14_17 = csvread('C:\repos\cae\results\all_data_decoded_b_14_17.csv');
-data_decoded_b_18_37 = csvread('C:\repos\cae\results\all_data_decoded_b_18_37.csv');
-data_decoded_b_38_45 = csvread('C:\repos\cae\results\all_data_decoded_b_38_45.csv');
-data_decoded_a = [data_decoded_a_0_13;data_decoded_a_14_17;data_decoded_a_18_37;data_decoded_a_38_45];
-data_decoded_b = [data_decoded_b_0_13;data_decoded_b_14_17;data_decoded_b_18_37;data_decoded_b_38_45];
-real_labels_a = zeros(18,1);
-real_labels_b = ones(28,1);
+data_decoded_a_a = csvread('C:\repos\cae\results\all_data_decoded_a_0_13.csv');
+data_decoded_a_b = csvread('C:\repos\cae\results\all_data_decoded_a_14_22.csv');
+data_decoded_a_c = csvread('C:\repos\cae\results\all_data_decoded_a_23_36.csv');
+data_decoded_a_d = csvread('C:\repos\cae\results\all_data_decoded_a_37_45.csv');
+data_decoded_b_a = csvread('C:\repos\cae\results\all_data_decoded_b_0_13.csv');
+data_decoded_b_b = csvread('C:\repos\cae\results\all_data_decoded_b_14_22.csv');
+data_decoded_b_c = csvread('C:\repos\cae\results\all_data_decoded_b_23_36.csv');
+data_decoded_b_d = csvread('C:\repos\cae\results\all_data_decoded_b_37_45.csv');
+data_decoded_a = [data_decoded_a_a;data_decoded_a_b;data_decoded_a_c;data_decoded_a_d];
+data_decoded_b = [data_decoded_b_a;data_decoded_b_b;data_decoded_b_c;data_decoded_b_d];
+real_labels_a = zeros(23,1);
+real_labels_b = ones(23,1);
 real_labels = [real_labels_a; real_labels_b];
 predicted_labels = zeros(46,1);
 
 % Identificação dos pacientes
-sample_name_a = [100, 101, 103, 105, 106, 111, 117, 118, 121, 122, 123, 124, 205, 215, 220, 223, 230, 234];
-sample_name_b = [107, 108, 109, 112, 113, 114, 115, 116, 119, 200, 201, 202, 203, 207, 208, 209, 210, 212, 213, 214, 217, 219, 221, 222, 228, 231, 232, 233];
+sample_name_a = [100, 101, 103, 105, 106, 112, 113, 114, 115, 116, 117, 121, 122, 123, 201, 202, 205, 209, 213, 215, 219, 220, 234];
+sample_name_b = [107, 108, 109, 111, 118, 119, 124, 200, 203, 207, 208, 210, 212, 214, 217, 221, 222, 223, 228, 230, 231, 232, 233];
 sample_name = [sample_name_a sample_name_b];
 
 %% Plots
